@@ -1,9 +1,5 @@
 # -*- coding: utf-8 -*-
-"""
-Created on Sun Jul 26 18:35:47 2020
 
-@author: bhaumik
-"""
 
 import numpy as np
 from perceptron import Perceptron
