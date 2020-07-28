@@ -22,3 +22,9 @@ print(perceptron.predict(inputs))
 
 inputs=np.array([0,0])
 print(perceptron.predict(inputs))
+
+inputs = np.array([1,0])
+print(perceptron.predict(inputs))
+
+inputs = np.array([0,1])
+print(perceptron.predict(inputs))
