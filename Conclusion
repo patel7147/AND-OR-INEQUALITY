@@ -1,0 +1,56 @@
+Conclusion : 
+
+According to the formula for training : (w => w + learning_rate(actual_output - predicted_output)*inputs).
+
+The output by running the program : 
+
+Iteration : 0
+[0. 0. 0.]
+[100. 100. 100.]
+[  0.   0. 100.]
+[-100.    0.    0.]
+
+Iteration : 1
+[-100.    0.    0.]
+[  0. 100. 100.]
+[-100.    0.  100.]
+[-100.    0.  100.]
+
+Iteration : 2
+[-100.    0.  100.]
+[  0. 100. 200.]
+[-100.    0.  200.]
+[-200.    0.  100.]
+
+Iteration : 3
+[-200.    0.  100.]
+[-100.  100.  200.]
+[-100.  100.  200.]
+[-200.  100.  100.]
+
+Iteration : 4
+[-200.  100.  100.]
+[-100.  200.  200.]
+[-200.  100.  200.]
+[-200.  100.  200.]
+
+The o/p of the program : 
+1
+0
+0
+0
+
+->The impact of the learning rate and the epoch on the inputs are:
+
+#Here I have take learning rate = 100 and epoch = 5.
+#Here the minimum epoch should be 5 to get the actual output.
+#I have tried epoch (1 to 4) but the weights are not are not stable so we don't get the outputs.
+#If we take epoch=5 then we can train the program at any number of learning rate.
+#Because the learning rate is just multiplying with weights.
+
+->The weights changes due to learning rate is:
+
+#For learning_rate=10 we get weights:[-20.  10.  20.]
+#For learning_rate=100 we get weights:[-200.  100.  200.]
+#For learning_rate=0.01 we get weights:[-0.2.  0.1.  0.2.]
+ 
