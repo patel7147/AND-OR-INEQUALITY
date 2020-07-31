@@ -1,0 +1,88 @@
+>>>This is the program to check the inputs are (linear or non-linear).
+
+* I have take 3 inputs to check whether I get desired output or not.
+
+#Here I have take example of a movies, so the truth table of boolean values are:
+#Here, this example follows AND Gate function. 
+#In Column(Movies) - if it is christopher Nolan's movie then the boolean value is 1 otherwise 0.
+#In Column(Actor) - if it is Matt Damon then the boolean value is 1 otherwise 0.
+#In Column(Director) - if it is christopher Nolan's then the boolean value is 1 otherwise 0.
+
+Movies	Actor	  Director	  Output
+    1	   1	       1  	      1
+    0	   1	       0  	      0
+    1	   0	       1  	      0
+    0	   0	       0  	      0
+
+*After Running the Program according to the inputs we get,
+#Output:
+
+Iteration : 0
+[0. 0. 0. 0.]
+[0.01 0.01 0.01 0.01]
+[0.   0.   0.01 0.  ]
+[-0.01  0.    0.    0.  ]
+
+Iteration : 1
+[-0.01  0.    0.    0.  ]
+[0.   0.01 0.01 0.01]
+[-0.01  0.    0.01  0.  ]
+[-0.01  0.    0.01  0.  ]
+
+Iteration : 2
+[-0.01  0.    0.01  0.  ]
+[0.   0.01 0.02 0.01]
+[-0.01  0.    0.02  0.  ]
+[-0.02  0.    0.01  0.  ]
+
+Iteration : 3
+[-0.02  0.    0.01  0.  ]
+[-0.01  0.01  0.02  0.01]
+[-0.02  0.    0.02  0.  ]
+[-0.02  0.    0.02  0.  ]
+
+Iteration : 4
+[-0.02  0.    0.02  0.  ]
+[-0.01  0.01  0.03  0.01]
+[-0.02  0.    0.03  0.  ]
+[-0.03  0.    0.02  0.  ]
+
+Iteration : 5
+[-0.03  0.    0.02  0.  ]
+[-0.02  0.01  0.03  0.01]
+[-0.03  0.    0.03  0.  ]
+[-0.03  0.    0.03  0.  ]
+
+Iteration : 6
+[-0.03  0.    0.03  0.  ]
+[-0.02  0.01  0.04  0.01]
+[-0.03  0.    0.04  0.  ]
+[-0.04  0.    0.03  0.  ]
+
+Iteration : 7
+[-0.04  0.    0.03  0.  ]
+[-0.03  0.01  0.04  0.01]
+[-0.03  0.01  0.04  0.01]
+[-0.04  0.01  0.03  0.01]
+
+Desired Output:
+
+Predicted Output: 1
+Actual Output : 1
+----------------
+
+Predicted Output: 0
+Actual Output : 0
+----------------
+
+Predicted Output: 0
+Actual Output : 0
+----------------
+
+Predicted Output: 0
+Actual Output : 0
+
+* After observing the output, the conclusion is:-
+#I have take learning rate=0.01 and minimun epoch should be 8.
+#We can get the desired output at epoch=8, between 1 to 7 we don't get the desire output we want.
+#Hence, to get the desired values it can be achieve at epoch=8. As for learning rate, we can take positive real number.
